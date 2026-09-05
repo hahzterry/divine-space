@@ -118,10 +118,10 @@ export function Layout({ children }: LayoutProps) {
       {/* Footer */}
       <footer className="border-t border-border py-6 mt-12">
         <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-muted-foreground">
-          <span>divine.space — a place for videos</span>
+          <span>iAM — Videos mapped to a 3 Word Pin addy.</span>
           <span className="flex items-center gap-3">
-            <a href="https://divine.video" target="_blank" rel="noopener noreferrer" className="hover:underline">
-              divine.video
+            <a href="https://iam.3wordpin.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              iAM.3wordpin.com
             </a>
           </span>
         </div>
