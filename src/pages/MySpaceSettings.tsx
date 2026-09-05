@@ -1172,7 +1172,7 @@ function DomainSettingsTab({ pubkey }: { pubkey: string }) {
             Your Domain
           </CardTitle>
           <CardDescription>
-            Your divine.space subdomain and NIP-05 identifier
+            Your space.3wordpin subdomain and NIP-05 identifier
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -1187,19 +1187,19 @@ function DomainSettingsTab({ pubkey }: { pubkey: string }) {
                 <Label className="text-xs text-muted-foreground">Your Profile URL</Label>
                 <div className="flex items-center gap-2 mt-1">
                   <code className="flex-1 px-3 py-2 bg-background rounded border text-sm">
-                    https://{existingName.name}.divine.space
+                    https://{existingName.name}.space.3wordpin.com
                   </code>
                   <Button
                     variant="outline"
                     size="icon"
-                    onClick={() => copyToClipboard(`https://${existingName.name}.divine.space`)}
+                    onClick={() => copyToClipboard(`https://${existingName.name}.space.3wordpin.com`)}
                   >
                     <Copy className="h-4 w-4" />
                   </Button>
                   <Button
                     variant="outline"
                     size="icon"
-                    onClick={() => window.open(`https://${existingName.name}.divine.space`, '_blank')}
+                    onClick={() => window.open(`https://${existingName.name}.space.3wordpin.com`, '_blank')}
                   >
                     <ExternalLink className="h-4 w-4" />
                   </Button>
@@ -1210,7 +1210,7 @@ function DomainSettingsTab({ pubkey }: { pubkey: string }) {
                 <Label className="text-xs text-muted-foreground">NIP-05 Identifier</Label>
                 <div className="flex items-center gap-2 mt-1">
                   <code className="flex-1 px-3 py-2 bg-background rounded border text-sm">
-                    {existingName.name}@divine.space
+                    {existingName.name}@space.3wordpin
                   </code>
                   <Button
                     variant="outline"
@@ -1244,7 +1244,7 @@ function DomainSettingsTab({ pubkey }: { pubkey: string }) {
           Claim Your Domain
         </CardTitle>
         <CardDescription>
-          Get your own subdomain and NIP-05 identifier at divine.space
+          Get your own subdomain and NIP-05 identifier at space.3wordpin
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-6">
@@ -1253,11 +1253,11 @@ function DomainSettingsTab({ pubkey }: { pubkey: string }) {
           <ul className="text-sm text-muted-foreground space-y-1">
             <li className="flex items-center gap-2">
               <CheckCircle className="h-4 w-4 text-green-500" />
-              Your own profile URL: <span className="font-mono text-foreground">yourname.divine.space</span>
+              Your own profile URL: <span className="font-mono text-foreground">yourname.space.3wordpin.com</span>
             </li>
             <li className="flex items-center gap-2">
               <CheckCircle className="h-4 w-4 text-green-500" />
-              A NIP-05 identifier: <span className="font-mono text-foreground">yourname@divine.space</span>
+              A NIP-05 identifier: <span className="font-mono text-foreground">yourname@space.3wordpin.com</span>
             </li>
             <li className="flex items-center gap-2">
               <CheckCircle className="h-4 w-4 text-green-500" />
@@ -1309,7 +1309,7 @@ function DomainSettingsTab({ pubkey }: { pubkey: string }) {
             )}
             {isAvailable && (
               <p className="text-green-500">
-                {name}.divine.space is available!
+                {name}.space.3wordpin.com is available!
               </p>
             )}
             {isUnavailable && (
@@ -1329,8 +1329,8 @@ function DomainSettingsTab({ pubkey }: { pubkey: string }) {
           <div className="p-4 rounded-lg bg-primary/10 border border-primary/20">
             <p className="text-sm font-medium mb-2">Preview:</p>
             <div className="space-y-1 text-sm">
-              <p>Profile URL: <span className="font-mono">https://{name}.divine.space</span></p>
-              <p>NIP-05: <span className="font-mono">{name}@divine.space</span></p>
+              <p>Profile URL: <span className="font-mono">https://{name}.space.3wordpin.com</span></p>
+              <p>NIP-05: <span className="font-mono">{name}@space.3wordpin</span></p>
             </div>
           </div>
         )}

@@ -94,7 +94,7 @@ export function createStarterDraft(input: StarterDraftInput): PageDocument {
 
   return {
     identifier: getDraftPageIdentifier(),
-    url: site.url ?? `https://divine.space/${input.pubkey}/`,
+    url: site.url ?? `https://space.3wordpin.com/${input.pubkey}/`,
     name: site.name ?? profile.display_name ?? profile.name,
     title,
     summary,

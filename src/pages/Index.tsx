@@ -50,18 +50,18 @@ export default function Index() {
   const navigate = useNavigate();
 
   useSeoMeta({
-    title: 'divine.space — a place for videos',
-    description: 'Make your own corner of the internet. Custom profile pages, videos, and friends on Nostr.',
+    title: 'space.3word — a place for videos',
+    description: 'Make your own corner of the internet. Custom profile pages, videos, and friends.',
   });
 
   useHead({
     meta: [
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://divine.space/' },
-      { property: 'og:title', content: 'divine.space — a place for videos' },
-      { property: 'og:description', content: 'Make your own corner of the internet. Custom profile pages, videos, and friends on Nostr.' },
-      { property: 'og:image', content: 'https://divine.space/og-image.svg' },
-      { property: 'og:site_name', content: 'divine.space' },
+      { property: 'og:url', content: 'https://space.3wordpin.com/' },
+      { property: 'og:title', content: 'space.3word — a place for videos' },
+      { property: 'og:description', content: 'Make your own corner of the internet. Custom profile pages, videos, and friends.' },
+      { property: 'og:image', content: 'https://space.3wordpin.com/og-image.svg' },
+      { property: 'og:site_name', content: 'space.3wordpin.com' },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
   });
@@ -203,7 +203,7 @@ export default function Index() {
             </section>
 
             <section className="border border-border p-3 text-sm text-muted-foreground">
-              divine.space is a myspace-inspired video platform on nostr. your page, your rules.
+              space.3wordpin is a myspace-inspired video platform. your page, your rules.
             </section>
           </aside>
         </div>

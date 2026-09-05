@@ -3,7 +3,7 @@
 
 import { useMutation, useQuery } from '@tanstack/react-query';
 
-const API_BASE = 'https://divine.space';
+const API_BASE = 'https://space.3wordpin.com'; // Base URL for the Divine Space API
 
 interface LookupResult {
   found: boolean;

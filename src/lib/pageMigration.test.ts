@@ -61,7 +61,7 @@ describe('sidebar-bento draft migration', () => {
       contentMode: 'creator-site',
       name: 'alice',
       summary: 'Published summary',
-      url: 'https://divine.space/alicepubkey/',
+      url: 'https://space.3wordpin.com/alicepubkey/',
       gridCols: 6,
     });
     expect(draft.widgets).toHaveLength(1);

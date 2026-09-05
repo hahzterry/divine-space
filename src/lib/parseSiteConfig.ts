@@ -182,7 +182,7 @@ export function siteConfigToTags(
   ];
 
   // Generate site URL
-  const siteUrl = `https://divine.space/${pubkey}/`;
+  const siteUrl = `https://space.3wordpin.com/${pubkey}/`;
   tags.push(['r', siteUrl]);
 
   // Metadata

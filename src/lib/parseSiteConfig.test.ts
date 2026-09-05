@@ -48,7 +48,7 @@ describe('parseSiteConfig', () => {
   it('parses site config with all basic metadata', () => {
     const event = createSiteEvent([
       ['d', 'profile'],
-      ['r', 'https://divine.space/alice/'],
+      ['r', 'https://space.3wordpin.com/alice/'],
       ['name', "Alice's Space"],
       ['title', 'Welcome to my profile'],
       ['summary', 'Creative director & artist'],
@@ -58,7 +58,7 @@ describe('parseSiteConfig', () => {
     const config = parseSiteConfig(event);
 
     expect(config).not.toBeNull();
-    expect(config!.url).toBe('https://divine.space/alice/');
+    expect(config!.url).toBe('https://space.3wordpin.com/alice/');
     expect(config!.name).toBe("Alice's Space");
     expect(config!.title).toBe('Welcome to my profile');
     expect(config!.summary).toBe('Creative director & artist');
@@ -190,7 +190,7 @@ describe('parseSiteConfig', () => {
     const event = createSiteEvent(
       [
         ['d', 'profile'],
-        ['r', 'https://divine.space/alice/'],
+        ['r', 'https://space.3wordpin.com/alice/'],
         ['name', "Alice's Space"],
         ['title', 'Welcome'],
         ['summary', 'Artist'],
@@ -210,7 +210,7 @@ describe('parseSiteConfig', () => {
 
     expect(config).not.toBeNull();
     expect(config!.identifier).toBe('profile');
-    expect(config!.url).toBe('https://divine.space/alice/');
+    expect(config!.url).toBe('https://space.3wordpin.com/alice/');
     expect(config!.name).toBe("Alice's Space");
     expect(config!.themeId).toBe('30514:divinepubkey:divine-bento');
     expect(config!.includes).toHaveLength(3);

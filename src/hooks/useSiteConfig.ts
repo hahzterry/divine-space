@@ -104,7 +104,7 @@ export function useUpdateSiteConfig(identifier = 'profile') {
             layout: input.layout ?? old?.layout,
             gridCols: input.gridCols ?? old?.gridCols,
             customization: input.customization ?? old?.customization,
-            url: old?.url ?? `https://divine.space/${pubkey}/`,
+            url: old?.url ?? `https://space.3wordpin.com/${pubkey}/`,
             renderingEngine: 'org.divine.bento',
           };
           return merged;

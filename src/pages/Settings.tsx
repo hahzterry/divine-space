@@ -35,7 +35,7 @@ function ClaimUsernameCard() {
       await registerName.mutateAsync({ name: desiredName, pubkey });
       toast({
         title: 'Username claimed!',
-        description: `You now own ${desiredName}.divine.space`,
+        description: `You now own ${desiredName}.Space.3wordpin`,
       });
       setDesiredName('');
       refetch();
@@ -75,12 +75,12 @@ function ClaimUsernameCard() {
           <div className="p-4 rounded-lg bg-muted/50">
             <div className="text-sm text-muted-foreground mb-1">Your URL</div>
             <a
-              href={`https://${existingName.name}.divine.space`}
+              href={`https://${existingName.name}.Space.3wordpin`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg font-bold text-primary hover:underline flex items-center gap-2"
             >
-              {existingName.name}.divine.space
+              {existingName.name}.space.3wordpin
               <ExternalLink className="h-4 w-4" />
             </a>
           </div>
@@ -102,7 +102,7 @@ function ClaimUsernameCard() {
           Claim Your Username
         </CardTitle>
         <CardDescription>
-          Get your own divine.space subdomain and NIP-05 identifier
+          Get your own space.3word subdomain and NIP-05 identifier
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
@@ -152,8 +152,8 @@ function ClaimUsernameCard() {
           <div className="p-4 rounded-lg bg-primary/5 border border-primary/20">
             <div className="text-sm text-muted-foreground mb-2">You'll get:</div>
             <ul className="text-sm space-y-1">
-              <li>• <span className="font-mono">{desiredName}.divine.space</span> - your profile URL</li>
-              <li>• <span className="font-mono">{desiredName}@divine.space</span> - NIP-05 identifier</li>
+              <li>• <span className="font-mono">{desiredName}.space.3wordpin</span> - your profile URL</li>
+              <li>• <span className="font-mono">{desiredName}@space.3wordpin</span> - NIP-05 identifier</li>
             </ul>
           </div>
         )}

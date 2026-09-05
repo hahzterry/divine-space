@@ -84,7 +84,7 @@ export function getSubdomainFromHostname(): string | null {
   const parts = hostname.split('.');
   if (
     parts.length >= 3 &&
-    (hostname.endsWith('.divine.space') || hostname.endsWith('.divine.video'))
+    (hostname.endsWith('space.3wordpin') || hostname.endsWith('.divine.video'))
   ) {
     const subdomain = parts.slice(0, -2).join('.');
     if (subdomain === 'www') return null;

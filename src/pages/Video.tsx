@@ -56,11 +56,11 @@ export default function Video() {
   // Dynamic SEO meta tags for social embeds
   const videoTitle = video?.title || 'Video';
   const videoDescription = video?.content?.slice(0, 200) || 'Watch this video on DiVine Space';
-  const videoThumbnail = video?.thumbnail || 'https://divine.space/og-image.svg';
-  const videoUrl = `https://divine.space/video/${id}`;
+  const videoThumbnail = video?.thumbnail || 'https://space.3wordpin.com/og-image.svg';
+  const videoUrl = `https://space.3wordpin.com/video/${id}`;
 
   useSeoMeta({
-    title: `${videoTitle} - DiVine Space`,
+    title: `${videoTitle} - Space`,
     description: videoDescription,
   });
 
@@ -77,19 +77,19 @@ export default function Video() {
       { property: 'og:image:height', content: '720' },
       { property: 'og:video', content: video?.video_url || '' },
       { property: 'og:video:type', content: 'video/mp4' },
-      { property: 'og:site_name', content: 'DiVine Space' },
+      { property: 'og:site_name', content: 'Space' },
       // Twitter Card
       { name: 'twitter:card', content: 'player' },
       { name: 'twitter:title', content: videoTitle },
       { name: 'twitter:description', content: videoDescription },
       { name: 'twitter:image', content: videoThumbnail },
-      { name: 'twitter:player', content: `https://divine.space/embed/${id}` },
+      { name: 'twitter:player', content: `https://space.3wordpin.com/embed/${id}` },
       { name: 'twitter:player:width', content: '480' },
       { name: 'twitter:player:height', content: '854' },
     ],
     link: [
       // oEmbed discovery
-      { rel: 'alternate', type: 'application/json+oembed', href: `https://relay.divine.video/api/oembed?url=${encodeURIComponent(videoUrl)}` },
+      { rel: 'alternate', type: 'application/json+oembed', href: `https://relay.space.3wordpin.com/api/oembed?url=${encodeURIComponent(videoUrl)}` },
     ],
   });
 

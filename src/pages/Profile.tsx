@@ -96,13 +96,13 @@ export default function Profile({ pubkey, isSubdomain, subdomain }: ProfileProps
   // Dynamic SEO meta tags for social embeds
   const profileName = divineUser?.profile?.display_name || divineUser?.profile?.name || 'Profile';
   const profileTitle = isSubdomain && subdomain
-    ? `${profileName} | ${subdomain}.divine.space`
+    ? `${profileName} | ${subdomain}.space.3wordpin`
     : profileName;
   const profileDescription = divineUser?.profile?.about || 'View this profile on DiVine Space';
-  const profileImage = divineUser?.profile?.picture || 'https://divine.space/og-image.svg';
+  const profileImage = divineUser?.profile?.picture || 'https://space.3wordpin.com/og-image.svg';
   const profileUrl = isSubdomain && subdomain
-    ? `https://${subdomain}.divine.space/`
-    : `https://divine.space/${nip19.npubEncode(pubkey)}`;
+    ? `https://${subdomain}.space.3wordpin/`
+    : `https://space.3wordpin.com/${nip19.npubEncode(pubkey)}`;
 
   useSeoMeta({
     title: profileTitle,
@@ -127,7 +127,7 @@ export default function Profile({ pubkey, isSubdomain, subdomain }: ProfileProps
     ],
     link: [
       // oEmbed discovery
-      { rel: 'alternate', type: 'application/json+oembed', href: `https://relay.divine.video/api/oembed?url=${encodeURIComponent(profileUrl)}` },
+      { rel: 'alternate', type: 'application/json+oembed', href: `https://relay.space.3wordpin.com/api/oembed?url=${encodeURIComponent(profileUrl)}` },
     ],
   });
 
@@ -295,7 +295,7 @@ export default function Profile({ pubkey, isSubdomain, subdomain }: ProfileProps
                     {isSubdomain && subdomain && (
                       <Badge variant="default" className="gap-1">
                         <Globe className="h-3 w-3" />
-                        {subdomain}.divine.space
+                        {subdomain}.space.3wordpin
                       </Badge>
                     )}
                     {profile.nip05 && (

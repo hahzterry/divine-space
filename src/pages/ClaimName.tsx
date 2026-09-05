@@ -40,12 +40,12 @@ export function ClaimName({ subdomain }: ClaimNameProps) {
       setClaimed(true);
       toast({
         title: 'Name claimed!',
-        description: `You now own ${subdomain}.divine.space`,
+        description: `You now own ${subdomain}.space.3wordpin`,
       });
 
       // Redirect to the subdomain after a short delay
       setTimeout(() => {
-        window.location.href = `https://${subdomain}.divine.space`;
+        window.location.href = `https://${subdomain}.space.3wordpin.com`;
       }, 2000);
     } catch (error) {
       toast({
@@ -66,12 +66,12 @@ export function ClaimName({ subdomain }: ClaimNameProps) {
             </div>
             <CardTitle className="text-2xl">Congratulations!</CardTitle>
             <CardDescription>
-              You've claimed <span className="font-bold text-foreground">{subdomain}.divine.space</span>
+              You've claimed <span className="font-bold text-foreground">{subdomain}.space.3wordpin.com</span>
             </CardDescription>
           </CardHeader>
           <CardContent className="text-center space-y-4">
             <p className="text-muted-foreground">
-              Your NIP-05 identifier is now <span className="font-mono text-foreground">{subdomain}@divine.space</span>
+              Your NIP-05 identifier is now <span className="font-mono text-foreground">{subdomain}@space.3wordpin</span>
             </p>
             <div className="flex items-center justify-center gap-2 text-muted-foreground">
               <Loader2 className="w-4 h-4 animate-spin" />
@@ -91,18 +91,18 @@ export function ClaimName({ subdomain }: ClaimNameProps) {
             <Sparkles className="w-8 h-8 text-primary" />
           </div>
           <CardTitle className="text-2xl">
-            {subdomain}.divine.space
+            {subdomain}.space.3wordpin.com
           </CardTitle>
           <CardDescription>
-            This name is available! Claim it for your Nostr profile.
+            This name is available! Claim it for your 3wordpin profile.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="space-y-2 text-sm text-muted-foreground">
             <p>By claiming this name, you'll get:</p>
             <ul className="list-disc list-inside space-y-1">
-              <li>Your own MySpace-style profile at <span className="font-mono">{subdomain}.divine.space</span></li>
-              <li>A NIP-05 identifier: <span className="font-mono">{subdomain}@divine.space</span></li>
+              <li>Your own MySpace-style profile at <span className="font-mono">{subdomain}.space.3wordpin.com</span></li>
+              <li>A NIP-05 identifier: <span className="font-mono">{subdomain}@space.3wordpin</span></li>
               <li>Easy sharing with friends</li>
             </ul>
           </div>
@@ -132,11 +132,11 @@ export function ClaimName({ subdomain }: ClaimNameProps) {
                 Log in with Nostr to claim this name
               </p>
               <Button
-                onClick={() => window.location.href = 'https://divine.space'}
+                onClick={() => window.location.href = 'https://space.3wordpin.com'}
                 variant="outline"
                 className="w-full"
               >
-                Go to Divine Space
+                Go to Space 3Wordpin
                 <ExternalLink className="w-4 h-4 ml-2" />
               </Button>
             </div>

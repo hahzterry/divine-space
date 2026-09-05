@@ -71,7 +71,7 @@ vi.mock('./useSiteConfig', () => ({
   useSiteConfig: vi.fn(() => ({
     data: {
       identifier: 'profile',
-      url: 'https://divine.space/test/',
+      url: 'https://space.3wordpin/test/',
       name: 'Test Space',
       layout: 'bento',
       widgets: [],
