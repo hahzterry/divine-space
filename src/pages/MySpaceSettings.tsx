@@ -1215,7 +1215,7 @@ function DomainSettingsTab({ pubkey }: { pubkey: string }) {
                   <Button
                     variant="outline"
                     size="icon"
-                    onClick={() => copyToClipboard(`${existingName.name}@divine.space`)}
+                    onClick={() => copyToClipboard(`${existingName.name}@space.3wordpin`)}
                   >
                     <Copy className="h-4 w-4" />
                   </Button>
