@@ -50,7 +50,7 @@ export default function Index() {
   const navigate = useNavigate();
 
   useSeoMeta({
-    title: 'space.3word — a place for videos',
+    title: 'Space.3WordPin — a place for videos',
     description: 'Make your own corner of the internet. Custom profile pages, videos, and friends.',
   });
 
@@ -58,7 +58,7 @@ export default function Index() {
     meta: [
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://space.3wordpin.com/' },
-      { property: 'og:title', content: 'space.3word — a place for videos' },
+      { property: 'og:title', content: 'space.3wordpin — a place for videos' },
       { property: 'og:description', content: 'Make your own corner of the internet. Custom profile pages, videos, and friends.' },
       { property: 'og:image', content: 'https://space.3wordpin.com/og-image.svg' },
       { property: 'og:site_name', content: 'space.3wordpin.com' },
@@ -203,7 +203,7 @@ export default function Index() {
             </section>
 
             <section className="border border-border p-3 text-sm text-muted-foreground">
-              space.3wordpin is a myspace-inspired video platform. your page, your rules.
+              Space.3WordPin is a myspace-inspired video platform. your page, your rules.
             </section>
           </aside>
         </div>
