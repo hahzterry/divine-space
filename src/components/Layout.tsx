@@ -47,7 +47,7 @@ export function Layout({ children }: LayoutProps) {
                 <Play className="h-3 w-3 fill-current" />
               </span>
               <span className="text-lg font-bold tracking-tight">
-                divine<span className="text-primary">.space</span>
+                Space<span className="text-primary">.3wordpin</span>
               </span>
             </Link>
 
